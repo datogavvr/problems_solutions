@@ -1,3 +1,4 @@
-a = [1, 2, 3, 4, 6]
-a.insert(len(a) // 2, 5)
-print(a)
+n = 10
+for i in range(n):
+    n -= 1
+    print(n)
