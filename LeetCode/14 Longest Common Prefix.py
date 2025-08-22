@@ -8,4 +8,4 @@ class Solution:
                 if l == 0:
                     return ''
             prefix = prefix[:l]
-        return prefix 
+        return prefix
