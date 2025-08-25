@@ -1,5 +1,3 @@
-import numpy as np
-
 class Solution:
     def countSquares(self, matrix: List[List[int]]) -> int:  
         m = len(matrix) # количество строк
