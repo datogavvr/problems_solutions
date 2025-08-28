@@ -1,7 +1,7 @@
 class Solution:
     def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:
         n = len(grid)
-        new_grid = [i for i in grid]
+        grid = [i for i in grid]
         for i in range(n):
             ind = [i, 0]
             lt = [] # диагональ левого треугольника
@@ -18,12 +18,12 @@ class Solution:
 
             ind = [i, 0]
             while ind[0] < n: # добавляем диагонали в матрицу
-                new_grid[ind[0]][ind[1]] = lt[ind[1]]
+                grid[ind[0]][ind[1]] = lt[ind[1]]
                 if i > 0:
-                    new_grid[ind[1]][ind[0]] = rt[ind[1]]
+                    grid[ind[1]][ind[0]] = rt[ind[1]]
                 ind[0] += 1
                 ind[1] += 1
-        return new_grid
+        return grid
 
 
 
