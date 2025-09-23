@@ -22,4 +22,4 @@ class Solution:
                         break
                     res += s[ind]
                     ind += j
-        return rest
+        return res
